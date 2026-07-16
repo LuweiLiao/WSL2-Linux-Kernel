@@ -3,6 +3,15 @@
 The [WSL2-Linux-Kernel][wsl2-kernel] repo contains the kernel source code and
 configuration files for the [WSL2][about-wsl2] kernel.
 
+
+# RTL8812AU USB WiFi (this fork) / 本分支扩展
+
+This fork adds an out-of-tree **RTL8812AU** USB WiFi driver for WSL2 (branch `feature/rtl8812au-6.6.87.2`, based on tag `linux-msft-wsl-6.6.87.2`).
+
+本分支在 `linux-msft-wsl-6.6.87.2` 基础上增加了 **RTL8812AU** USB 无线网卡驱动，便于通过 `usbipd` 在 WSL2 内使用 WiFi。
+
+**Usage (中英双语) / 使用说明：** see [`Microsoft/README-rtl8812au.md`](Microsoft/README-rtl8812au.md)
+
 # Reporting Bugs
 
 If you discover an issue relating to WSL or the WSL2 kernel, please report it on
